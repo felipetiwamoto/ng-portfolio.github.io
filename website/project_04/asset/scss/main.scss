@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@import "./theme";
+@import "./mixin";
+
+// START: ELEMENT
+@import "./element/button";
+@import "./element/form";
+// END: ELEMENT
+
+// START: COMPONENT
+@import "./component/collapse";
+@import "./component/container";
+@import "./component/dot_pattern";
+@import "./component/grid";
+@import "./component/info";
+@import "./component/member";
+@import "./component/project";
+@import "./component/service";
+@import "./component/square";
+@import "./component/tab";
+// END: COMPONENT
+
+// START: SECTION
+@import "./section/about_us";
+@import "./section/copyright";
+@import "./section/faq";
+@import "./section/footer";
+@import "./section/header";
+@import "./section/milestone";
+@import "./section/navbar";
+@import "./section/newsletter";
+@import "./section/our_services";
+@import "./section/portfolio";
+@import "./section/teams";
+// END: SECTION
+
+// START: PAGE
+@import "./page/home";
+// END: PAGE
+
+* {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	@include roboto(14px);
+}
+
+button,
+input,
+select,
+textarea {
+	@include roboto(14px);
+}
+
+body {
+	max-width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	@include roboto(14px);
+}
+
+.about_us__ornament,
+.copyright__ornament,
+.faq__ornament,
+.footer__ornament,
+.header__ornament,
+.milestone__ornament,
+.navbar__ornament,
+.newsletter__ornament,
+.our_services__ornament,
+.portfolio__ornament,
+.teams__ornament {
+	display: none;
+
+	@include md {
+		display: block;
+	}
+}

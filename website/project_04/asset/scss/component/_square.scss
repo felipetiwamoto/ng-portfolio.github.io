@@ -1,0 +1,42 @@
+.square {
+	width: 62px;
+	height: 62px;
+	position: relative;
+
+	&::after {
+		content: "";
+		display: flex;
+		width: 0px;
+		height: 0px;
+		border-bottom: 16px solid transparent;
+		border-right: 16px solid transparent;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+	}
+
+	&.red {
+		background-color: $red;
+
+		&::after {
+			border-top: 16px solid $redLight;
+			border-left: 16px solid $redLight;
+		}
+	}
+	&.blue {
+		background-color: $blue;
+
+		&::after {
+			border-top: 16px solid $blueLight;
+			border-left: 16px solid $blueLight;
+		}
+	}
+	&.green {
+		background-color: $green;
+
+		&::after {
+			border-top: 16px solid $greenLight;
+			border-left: 16px solid $greenLight;
+		}
+	}
+}

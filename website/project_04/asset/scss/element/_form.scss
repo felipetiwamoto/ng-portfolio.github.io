@@ -1,0 +1,25 @@
+.form {
+	@include flex(initial, initial, column-reverse);
+
+	&__field {
+		padding: 5px 16px;
+		height: 56px;
+		border-radius: 8px;
+		@include raleway(16px, 400);
+		border: 1px solid $greyf;
+		background-color: $greyf;
+
+		&::placeholder {
+			color: $grey9;
+		}
+		&:focus {
+			+ .form__label {
+			}
+		}
+	}
+	&__label {
+		margin-bottom: 21px;
+		@include roboto(16px, 400);
+		color: $greyf;
+	}
+}

@@ -1,0 +1,117 @@
+/* Material Based Color Scheme */
+#register {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("https://images.unsplash.com/photo-1517817748493-49ec54a32465?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative; }
+  #register:after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 35vw;
+    background-image: linear-gradient(to bottom, #ffffff, #eeeeee); }
+  #register:before {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 65vw;
+    background-color: #ed4343cc; }
+  #register .container {
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #register .container .left {
+      padding: 30px 0px;
+      z-index: 1;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff; }
+      #register .container .left .title {
+        position: relative;
+        z-index: 1;
+        max-width: 600px; }
+        #register .container .left .title__main {
+          font-size: 4em;
+          letter-spacing: 10px;
+          margin-bottom: 0.6em;
+          font-family: 'Kaushan Script', cursive; }
+        #register .container .left .title__desc {
+          font-size: 1.7em;
+          line-height: 1.5em;
+          font-weight: 300; }
+    #register .container .right {
+      padding: 30px 0px;
+      z-index: 1;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #register .container .right .logo {
+        font-size: 48px;
+        margin-bottom: 1em;
+        font-weight: 900;
+        font-family: 'Kaushan Script', cursive;
+        color: #ed4343;
+        display: inline-flex;
+        align-items: center; }
+      #register .container .right form {
+        width: 500px;
+        padding: 50px;
+        background-color: #ffffff; }
+        #register .container .right form .forgot-password,
+        #register .container .right form .login,
+        #register .container .right form .register {
+          margin-top: 15px;
+          text-decoration: underline;
+          display: flex;
+          justify-content: center;
+          color: #777777;
+          text-align: center;
+          cursor: pointer; }
+        #register .container .right form .forgot-password {
+          justify-content: flex-start;
+          text-align: left;
+          margin-top: 0px; }
+
+@media all and (max-width: 1200px) {
+  #register:before {
+    width: 60vw; }
+  #register:after {
+    width: 40vw; } }
+
+@media all and (max-width: 992px) {
+  #register {
+    padding: 30px 0px;
+    background-size: cover;
+    position: relative; }
+    #register:before {
+      width: 100vw;
+      height: 100%; }
+    #register:after {
+      display: none; }
+    #register .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #register .container .left {
+        text-align: center; }
+        #register .container .left .title__main {
+          font-size: 32px; }
+        #register .container .left .title__desc {
+          font-size: 16px; }
+      #register .container .right .logo {
+        font-size: 26px;
+        margin-top: 30px;
+        color: #ffffff; } }

@@ -1,0 +1,79 @@
+.info {
+	min-width: 100%;
+	text-align: center;
+
+	@include md {
+		text-align: left;
+	}
+	span {
+		display: block;
+	}
+	&__name {
+		margin-bottom: 26px;
+		@include roboto(16px, bold, 1.5px);
+	}
+	&__title {
+		@include raleway(24px, 600, 0.2px, 40px);
+
+		br {
+			display: none;
+		}
+		@include md {
+			@include raleway(48px, 600, 0.2px, 64px);
+			br {
+				display: block;
+			}
+		}
+	}
+	&__desc {
+		margin-top: 27px;
+		@include roboto(16px, initial, initial, 24px);
+
+		br {
+			display: none;
+		}
+		@include md {
+			br {
+				display: block;
+			}
+		}
+	}
+	&__button {
+		margin-top: 24px;
+		min-height: 53px;
+		width: 167px;
+		@include roboto(14px);
+
+		@include md {
+			margin-top: 58px;
+		}
+	}
+
+	&--centered {
+		text-align: center;
+
+		.info__name {
+		}
+		.info__title {
+		}
+		.info__desc {
+		}
+		.info__button {
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+}
+
+@media all and (min-width: 576px) {
+}
+
+@media all and (min-width: 768px) {
+}
+
+@media all and (min-width: 992px) {
+}
+
+@media all and (min-width: 1200px) {
+}

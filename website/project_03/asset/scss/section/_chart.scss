@@ -1,0 +1,116 @@
+.chart {
+	padding-top: 29px;
+	padding-bottom: 78px;
+
+	&__container {
+	}
+	&__row {
+		@include row(-17px);
+	}
+	&__column {
+		@include column(33.333333%, 17px);
+	}
+	&__card {
+		min-height: 183px;
+		border-radius: 20px;
+		padding: 10px;
+		text-align: center;
+		background-color: $greye;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__card__number {
+		font-size: 2.9rem;
+		letter-spacing: 0.5px;
+		margin-bottom: 0px;
+		margin-top: -5px;
+		font-weight: bold;
+	}
+	&__card__desc {
+		font-size: 0.85rem;
+		letter-spacing: 0.1px;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.chart {
+		&__container {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__card {
+		}
+		&__card__number {
+		}
+		&__card__desc {
+		}
+	}
+}
+
+@media all and (max-width: 992px) {
+	.chart {
+		&__container {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__card {
+		}
+		&__card__number {
+		}
+		&__card__desc {
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	.chart {
+		&__container {
+		}
+		&__row {
+			@include row(-5px);
+		}
+		&__column {
+			@include column(33.333333%, 5px);
+		}
+		&__card {
+		}
+		&__card__number {
+		}
+		&__card__desc {
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.chart {
+		padding-bottom: 0px !important;
+
+		&__container {
+		}
+		&__row {
+		}
+		&__column {
+			@include column(100%, 5px);
+
+			&:last-child {
+				.chart__card {
+					margin-bottom: 0px;
+				}
+			}
+		}
+		&__card {
+			margin-bottom: 10px;
+			min-height: 120px;
+		}
+		&__card__number {
+		}
+		&__card__desc {
+		}
+	}
+}

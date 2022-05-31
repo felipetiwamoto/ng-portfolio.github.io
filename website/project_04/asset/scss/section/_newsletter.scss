@@ -1,0 +1,90 @@
+.newsletter {
+	max-width: 100vw;
+	// overflow-x: hidden;
+	min-height: initial;
+	padding: 30px 0px;
+	background-color: $baseRed;
+	@include flex(center);
+	position: relative;
+    text-align: center;
+
+    @include md{
+        min-height: 433px;
+        padding: 68px 0px;
+        text-align: left;
+    }
+	&__container {
+		height: 100%;
+		margin-top: 0px;
+		position: relative;
+        
+        @include md{
+            margin-top: 30px;
+        }
+	}
+	&__ornament {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+
+		* {
+			position: absolute;
+		}
+
+		.newsletter__ornament__pattern {
+			&:nth-child(1) {
+				top: 3%;
+				left: -21.5%;
+			}
+			&:nth-child(2) {
+				right: 13.7%;
+				bottom: -87%;
+			}
+		}
+	}
+	&__row {
+		@include row(-5px !important);
+	}
+	&__column {
+		position: relative;
+		@include column(5px !important, 50%);
+
+		&:nth-child(1) {
+		}
+		&:nth-child(2) {
+		}
+	}
+	&__title {
+		@include raleway(32px, bold, initial, 50px);
+		display: block;
+		color: $greyf;
+
+        br{
+            display:none;
+        }
+        @include md{
+            @include raleway(48px, bold, initial, 65px);
+            br{
+                display:block;
+            }
+        }
+	}
+	&__desc {
+		@include roboto(16px, 500);
+		display: block;
+		margin-top: 25px;
+		color: $greyf;
+	}
+	&__button {
+		margin-top: 15px;
+		width: 160px;
+		min-height: 53px;
+		@include roboto(14px, bold);
+
+        @include md{
+            margin-top:40px;
+        }
+	}
+}

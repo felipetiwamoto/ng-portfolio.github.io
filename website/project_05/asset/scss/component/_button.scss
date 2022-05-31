@@ -1,0 +1,27 @@
+.button {
+    padding: 5px 15px;
+    min-height:40px;
+    border-radius:5px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+
+    &.fluid{
+        width:100%;
+    }
+
+    &.primary{
+        background-color: $primary;
+        color:$white;
+    }
+
+    &.large{
+        font-size:20px;
+        letter-spacing: 3px;
+        min-height:50px;
+    }
+}

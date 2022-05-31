@@ -1,0 +1,31 @@
+.container {
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: content-box;
+	margin: 0px auto;
+
+	&.small {
+		max-width: 1024px;
+		flex-basis: 1024px;
+	}
+
+	&.large {
+		max-width: 1232px;
+		flex-basis: 1232px;
+	}
+}
+
+@media all and (max-width: 576px) {
+}
+
+@media all and (min-width: 576px) {
+}
+
+@media all and (min-width: 768px) {
+}
+
+@media all and (min-width: 992px) {
+}
+
+@media all and (min-width: 1200px) {
+}

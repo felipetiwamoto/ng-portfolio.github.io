@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+@import "./theme";
+@import "./reset";
+
+// START: ELEMENT
+@import "./element/button";
+// END: ELEMENT
+
+// START: COMPONENT
+@import "./component/container";
+// END: COMPONENT
+
+// START: SECTION
+@import "./section/faq";
+@import "./section/footer";
+@import "./section/nav";
+@import "./section/our_mission";
+@import "./section/our_team";
+@import "./section/our_vision";
+@import "./section/page";
+// END: SECTION
+
+// START: PAGE
+
+// END: PAGE

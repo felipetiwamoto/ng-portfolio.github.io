@@ -1,0 +1,205 @@
+.footer {
+	padding-top: 231px;
+	background-color: $greye;
+
+	&__container {
+	}
+	&__logo {
+		margin-bottom: 72px;
+
+		svg {
+			height: 42px !important;
+			width: 174px !important;
+			object-fit: contain;
+
+			path {
+				fill: $grey0;
+			}
+		}
+	}
+	&__row {
+		@include row(-17px);
+	}
+	&__column {
+		@include column(25%, 17px);
+	}
+	&__title {
+		margin-bottom: 1.28rem;
+	}
+	&__menu {
+		font-size: 0.85rem;
+	}
+	&__menu__item {
+		margin-bottom: 23.5px;
+
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+	&__menu__link {
+	}
+	&__menu__item {
+	}
+	&__menu__link {
+	}
+	&__menu__item {
+	}
+	&__menu__link {
+	}
+	&__menu__item {
+	}
+	&__menu__link {
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.footer {
+		&__container {
+		}
+		&__logo {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__title {
+		}
+		&__menu {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+	}
+}
+
+@media all and (max-width: 992px) {
+	.footer {
+		&__container {
+		}
+		&__logo {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__title {
+		}
+		&__menu {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	.footer {
+		padding-top: 150px !important;
+		padding-bottom: 0px !important;
+
+		&__container {
+		}
+		&__logo {
+			margin-bottom: 30px;
+			display: flex;
+			justify-content: center;
+		}
+		&__row {
+		}
+		&__column {
+			@include column(50%, 17px);
+
+			&:nth-child(odd) {
+				text-align: right;
+			}
+
+			&:nth-child(3),
+			&:nth-child(4) {
+				.footer__menu {
+					margin-bottom: 0px;
+				}
+			}
+		}
+		&__title {
+		}
+		&__menu {
+			margin-bottom: 34px;
+		}
+		&__menu__item {
+			margin-bottom: 10px;
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.footer {
+		&__container {
+		}
+		&__logo {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__title {
+		}
+		&__menu {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+		&__menu__item {
+		}
+		&__menu__link {
+		}
+	}
+}

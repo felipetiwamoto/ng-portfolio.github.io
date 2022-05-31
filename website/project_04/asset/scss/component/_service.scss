@@ -1,0 +1,44 @@
+.service {
+	min-height: 328px;
+	padding: 40px 27px;
+	margin-bottom: 16px;
+	transition: 0.5s;
+
+	&:hover {
+		transition: 0.5s;
+		box-shadow: 0px 25px 55px adjust-color($color: $grey7, $alpha: -0.85);
+	}
+	span {
+		display: block;
+	}
+	&__icon {
+		width: 56px;
+		height: 56px;
+		border-radius: 50px;
+		@include flex(center, center);
+		background-color: $baseRedLight;
+	}
+	&__title {
+		margin-top: 25px;
+		margin-bottom: 20px;
+		@include raleway(24px, bold);
+	}
+	&__desc {
+		@include roboto(16px, initial, 0.086px, 24px);
+	}
+}
+
+@media all and (max-width: 576px) {
+}
+
+@media all and (min-width: 576px) {
+}
+
+@media all and (min-width: 768px) {
+}
+
+@media all and (min-width: 992px) {
+}
+
+@media all and (min-width: 1200px) {
+}

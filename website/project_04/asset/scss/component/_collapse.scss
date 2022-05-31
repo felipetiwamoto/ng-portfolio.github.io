@@ -1,0 +1,144 @@
+.collapse {
+	box-shadow: 0px 25px 55px adjust-color($color: $grey7, $alpha: -0.85);
+	margin-bottom: 16px;
+
+	&.collapsed {
+		&__icon {
+			&::before {
+			}
+		}
+	}
+	&__header {
+		padding: 16px;
+	}
+	&__title {
+		@include roboto(16px, 500, initial, 24px);
+		color: $grey6;
+	}
+	&__icon {
+		&::before {
+		}
+	}
+	&__body {
+		padding: 10px 16px;
+	}
+	&__desc {
+		@include roboto(16px, 400, initial, 24px);
+		color: $grey9;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.collapse {
+		&.collapsed {
+			&__icon {
+				&::before {
+				}
+			}
+		}
+		&__header {
+		}
+		&__title {
+		}
+		&__icon {
+			&::before {
+			}
+		}
+		&__body {
+		}
+		&__desc {
+		}
+	}
+}
+
+@media all and (min-width: 576px) {
+	.collapse {
+		&.collapsed {
+			&__icon {
+				&::before {
+				}
+			}
+		}
+		&__header {
+		}
+		&__title {
+		}
+		&__icon {
+			&::before {
+			}
+		}
+		&__body {
+		}
+		&__desc {
+		}
+	}
+}
+
+@media all and (min-width: 768px) {
+	.collapse {
+		&.collapsed {
+			&__icon {
+				&::before {
+				}
+			}
+		}
+		&__header {
+		}
+		&__title {
+		}
+		&__icon {
+			&::before {
+			}
+		}
+		&__body {
+		}
+		&__desc {
+		}
+	}
+}
+
+@media all and (min-width: 992px) {
+	.collapse {
+		&.collapsed {
+			&__icon {
+				&::before {
+				}
+			}
+		}
+		&__header {
+		}
+		&__title {
+		}
+		&__icon {
+			&::before {
+			}
+		}
+		&__body {
+		}
+		&__desc {
+		}
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.collapse {
+		&.collapsed {
+			&__icon {
+				&::before {
+				}
+			}
+		}
+		&__header {
+		}
+		&__title {
+		}
+		&__icon {
+			&::before {
+			}
+		}
+		&__body {
+		}
+		&__desc {
+		}
+	}
+}

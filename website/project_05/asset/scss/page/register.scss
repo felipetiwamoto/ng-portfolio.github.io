@@ -1,0 +1,167 @@
+@import "./../theme";
+
+#register {
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url("https://images.unsplash.com/photo-1517817748493-49ec54a32465?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:relative;
+
+    &:after{
+        content:"";
+        display: flex;
+        position:absolute;
+        top:0px;
+        right:0px;
+        height:100%;
+        width:35vw;
+        background-image:linear-gradient(to bottom, $white, $greye);
+    }
+
+    &:before{
+        content:"";
+        display: flex;
+        position:absolute;
+        top:0px;
+        left:0px;
+        height:100%;
+        width:65vw;
+        background-color:#{$primary}cc;
+    }
+
+    .container {
+        min-height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            padding:30px 0px;
+            z-index: 1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:$white;
+
+            .title {
+                position: relative;
+                z-index: 1;
+                max-width: 600px;
+
+                &__main {
+                    font-size: 4em;
+                    letter-spacing: 10px;
+                    margin-bottom: 0.6em;
+                    font-family: 'Kaushan Script', cursive;
+                }
+
+                &__desc {
+                    font-size: 1.7em;
+                    line-height: 1.5em;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .right {
+            padding:30px 0px;
+            z-index: 1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .logo{
+                font-size:48px;
+                margin-bottom:1em;
+                font-weight: 900;
+                font-family: 'Kaushan Script', cursive;
+                color:$primary;
+                display: inline-flex;
+                align-items: center;
+            }
+
+            form {
+                width: 500px;
+                padding: 50px;
+                background-color: $white;
+
+                .forgot-password,
+                .login,
+                .register {
+                    margin-top: 15px;
+                    text-decoration: underline;
+                    display: flex;
+                    justify-content: center;
+                    color: $grey7;
+                    text-align: center;
+                    cursor: pointer;
+                }
+
+                .forgot-password{
+                    justify-content: flex-start;
+                    text-align: left;
+                    margin-top:0px;
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (max-width:1200px) {
+    #register {
+        &:before {
+            width: 60vw;
+        }
+
+        &:after {
+            width: 40vw;
+        }
+    }
+}
+
+@media all and (max-width:992px) {
+    #register {
+        padding:30px 0px;
+        background-size:cover;
+        position:relative;
+
+        &:before{
+            width: 100vw;
+            height:100%;
+        }
+        &:after{
+            display:none;
+        }
+        .container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .left{
+                text-align:center;
+                .title{
+                    &__main{
+                        font-size:32px;
+                    }
+                    &__desc{
+                        font-size:16px;
+                    }
+                }
+            }
+            .right{
+                .logo{
+                    font-size:26px;
+                    margin-top:30px;
+                    color:$white;
+                }
+                form{
+                }
+            }
+        }
+    }
+}

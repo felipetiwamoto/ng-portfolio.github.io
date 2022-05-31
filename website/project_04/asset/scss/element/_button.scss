@@ -1,0 +1,22 @@
+.button {
+	border-radius: 8px;
+	padding: 5px 12px;
+	min-height: 42px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.5s;
+	border: 1px solid transparent;
+	@include roboto(16px, bold);
+
+	&:hover {
+		transition: 0.5s;
+		filter: brightness(0.91);
+	}
+
+	&.blue {
+		background-color: $blue;
+		color: $greyf;
+	}
+}

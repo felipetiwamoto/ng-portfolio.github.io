@@ -1,0 +1,29 @@
+.button {
+	font-size: 0.8rem;
+	min-height: 42px;
+	padding: 5px 15px;
+	border-radius: 30px;
+	border: 1px solid transparent;
+	outline: none;
+	box-shadow: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	color: $text;
+
+	&.yellow {
+		background-color: $yellow;
+		color: $text !important;
+	}
+
+	&.green1 {
+		background-color: $green1;
+		color: $white !important;
+	}
+
+	&.white {
+		background-color: $white;
+		color: $grey2;
+	}
+}

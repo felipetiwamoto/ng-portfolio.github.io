@@ -1,0 +1,81 @@
+.page {
+	text-align:center;
+
+	&__container {
+	}
+	&__name {
+		margin-top:5px;
+		padding:5px 15px 1px 15px;
+		min-height:47px;
+		width: 200px;
+		border-radius: 30px;
+		font-size: 1rem;
+		letter-spacing: 3px;
+		margin-bottom:17px;
+		font-weight: 600;
+		background-color: $pageNameBg;
+		display:inline-flex;
+		justify-content: center;
+		align-items: center;
+		color:$textOrange;
+
+	}
+	&__title {
+		margin-left:-9px;
+		margin-bottom:1px;
+	}
+	&__desc {
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.page {
+		&__container {
+		}
+		&__name {
+		}
+		&__title {
+		}
+		&__desc {
+		}
+	}
+}
+
+@media all and (max-width: 992px) {
+	.page {
+		&__container {
+		}
+		&__name {
+		}
+		&__title {
+		}
+		&__desc {
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	.page {
+		&__container {
+		}
+		&__name {
+		}
+		&__title {
+		}
+		&__desc {
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.page {
+		&__container {
+		}
+		&__name {
+		}
+		&__title {
+		}
+		&__desc {
+		}
+	}
+}

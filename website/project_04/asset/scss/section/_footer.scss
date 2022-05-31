@@ -1,0 +1,166 @@
+.footer {
+	max-width: 100vw;
+	overflow-x: hidden;
+	padding: 30px 0px 0px 0px;
+	background-color: $baseRed;
+	color: $greyf;
+
+	@include md {
+		padding: 95px 0px 0px 0px;
+	}
+
+	&__ornament {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		z-index: 0;
+
+		* {
+			position: absolute;
+		}
+	}
+	&__ornament__pattern {
+		top: -50%;
+		right: -22%;
+	}
+	&__container {
+		position: relative;
+	}
+	&__row {
+		@include row(-5px);
+		flex-wrap: wrap;
+		justify-content: space-between;
+		z-index: 1;
+		position: relative;
+
+		@include md {
+			flex-wrap: nowrap;
+		}
+	}
+	&__column {
+		@include column(5px, 25%);
+		@include flex(center, initial, column);
+
+		@include md {
+			@include flex(flex-start, initial, column);
+		}
+		&:nth-child(1) {
+			max-width: 100%;
+			flex-basis: 100%;
+
+			@include md {
+				max-width: 40%;
+				flex-basis: 40%;
+			}
+		}
+		&:nth-child(2) {
+			max-width: 50%;
+			flex-basis: 50%;
+
+			@include md {
+				max-width: 20%;
+				flex-basis: 20%;
+			}
+		}
+		&:nth-child(3) {
+			max-width: 50%;
+			flex-basis: 50%;
+
+			@include md {
+				max-width: 20%;
+				flex-basis: 20%;
+			}
+		}
+		&:nth-child(4) {
+			max-width: 100%;
+			flex-basis: 100%;
+			text-align: center;
+			margin-top: 15px;
+
+			@include md {
+				margin-top: 0px;
+				max-width: 20%;
+				flex-basis: 20%;
+				text-align: left;
+			}
+		}
+	}
+	&__logo {
+		margin-bottom: 24px;
+	}
+	&__contact {
+		margin-bottom: 15px;
+
+		@include md {
+			margin-bottom: 0px;
+		}
+	}
+	&__contact__item {
+		margin-bottom: 11px;
+		@include flex(flex-start, center);
+
+		@include md {
+			@include flex(flex-start);
+		}
+	}
+	&__contact__icon {
+		margin-right: 5px;
+		width: 30px;
+		height: 30px;
+		@include flex(center, center);
+	}
+	&__contact__desc {
+		margin-top: 5px;
+		@include roboto(16px, 500);
+	}
+	&__column {
+	}
+	&__list {
+	}
+	&__list__title {
+		margin-bottom: 29px;
+		@include raleway(16px, 700);
+	}
+	&__list__menu {
+	}
+	&__list__menu__item {
+	}
+	&__list__menu__link {
+		margin-bottom: 21px;
+		display: flex;
+		@include roboto(16px, 500);
+		color: $greyf;
+	}
+	&__column {
+	}
+	&__column {
+	}
+	&__list {
+	}
+	&__list__title {
+		display: block;
+		@include raleway(16px, 700);
+	}
+	&__list__social {
+		@include inlineFlex(center);
+		flex-wrap: wrap;
+	}
+	&__list__social__item {
+		margin-right: 16px;
+
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+	&__list__social__link {
+		margin-bottom: 21px;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		@include flex(center, center);
+		background-color: $greyf;
+		color: $baseRed;
+	}
+}

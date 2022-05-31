@@ -1,0 +1,185 @@
+.be_a_pro {
+	padding-bottom: 0px;
+	margin-bottom: -138px;
+
+	&__container {
+	}
+	&__content {
+		min-height: 304px;
+		border-radius: 20px;
+		position: relative;
+		background-color: $green2;
+		display: flex;
+		align-items: center;
+	}
+	&__row {
+		@include row();
+		width: 100%;
+		z-index: 2;
+		justify-content: flex-end;
+		position: relative;
+	}
+	&__column {
+		@include column(50%);
+		transform: translate(17px, -1px);
+	}
+	&__title {
+		line-height: 34px;
+		font-size: 1.73rem;
+		letter-spacing: 0.2px;
+		font-weight: 400;
+		margin-bottom: 2.1rem;
+		transform: translate(0px, 1px);
+		color: $white;
+	}
+	&__button {
+		min-height: 47px;
+		width: 229px;
+		padding: 5px 25px;
+		font-weight: bold;
+		justify-content: space-between;
+
+		.svg {
+			height: 14px !important;
+			transform: translate(2px, 0px);
+
+			path {
+				stroke: $green2;
+			}
+		}
+	}
+	&__image_behide {
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		top: 0px;
+		left: 0px;
+		z-index: 1;
+		position: absolute;
+	}
+	&__image {
+		width: 264px;
+		bottom: -5px;
+		left: 6.4vw;
+		position: absolute;
+
+		img {
+			width: 100%;
+			z-index: 1;
+			position: relative;
+			object-fit: contain;
+		}
+	}
+
+	&__ball_behide {
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		top: 0px;
+		left: 0px;
+		z-index: 0;
+		overflow: hidden;
+		position: absolute;
+
+		&:after {
+			content: "";
+			width: 315px;
+			height: 315px;
+			border-radius: 50%;
+			bottom: -150px;
+			left: 6.45vw;
+			z-index: 0;
+			background-color: $green1;
+			position: absolute;
+		}
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.be_a_pro {
+		&__container {
+		}
+		&__content {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__image {
+		}
+		&__title {
+		}
+		&__button {
+		}
+	}
+}
+
+@media all and (max-width: 992px) {
+	.be_a_pro {
+		&__container {
+		}
+		&__content {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__image {
+		}
+		&__title {
+		}
+		&__button {
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	.be_a_pro {
+		padding-top: 10vw !important;
+		text-align: center;
+
+		&__container {
+		}
+		&__content {
+		}
+		&__row {
+		}
+		&__column {
+			@include column(100%);
+		}
+		&__image {
+		}
+		&__title {
+			font-size: 1.3rem;
+		}
+		&__button {
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.be_a_pro {
+		padding-top: 75px !important;
+
+		&__container {
+		}
+		&__content {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__image {
+		}
+		&__title {
+		}
+		&__button {
+		}
+		&__ball_behide {
+			&:after {
+				width: 80vw;
+				height: 80vw;
+			}
+		}
+	}
+}

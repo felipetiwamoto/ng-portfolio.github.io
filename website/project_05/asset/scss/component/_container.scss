@@ -1,0 +1,37 @@
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
+}
+
+@media all and (min-width: 576px) {
+    .container {
+        max-width: 576px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    .container {
+        max-width: 1600px;
+    }
+}

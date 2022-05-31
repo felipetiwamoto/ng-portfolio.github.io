@@ -1,0 +1,79 @@
+@mixin appendColumns($size, $maxColumn: 12) {
+	@for $i from 1 through $maxColumn {
+		> .col-#{$size}-#{$i} {
+			max-width: (100% / $maxColumn) * $i;
+			flex-basis: (100% / $maxColumn) * $i;
+		}
+	}
+}
+
+@mixin appendPushs($size, $maxColumn: 12) {
+	@for $i from 1 through $maxColumn {
+		> .push-#{$size}-#{$i} {
+			margin-right: (100% / $maxColumn) * $i;
+		}
+	}
+}
+
+.row {
+	@include row(-15px);
+
+	> [class*="col-"] {
+		@include column(15px);
+	}
+
+	&.small {
+		margin-left: -8px;
+		margin-right: -8px;
+
+		> [class*="col-"] {
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+	}
+
+	&.huge {
+		margin-left: -50px;
+		margin-right: -50px;
+
+		> [class*="col-"] {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.row {
+		@include appendColumns(xs, 12);
+		@include appendPushs(xs, 12);
+	}
+}
+
+@media all and (min-width: 576px) {
+	.row {
+		@include appendColumns(sm, 12);
+		@include appendPushs(sm, 12);
+	}
+}
+
+@media all and (min-width: 768px) {
+	.row {
+		@include appendColumns(md, 12);
+		@include appendPushs(md, 12);
+	}
+}
+
+@media all and (min-width: 992px) {
+	.row {
+		@include appendColumns(lg, 12);
+		@include appendPushs(lg, 12);
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.row {
+		@include appendColumns(xl, 12);
+		@include appendPushs(xl, 12);
+	}
+}

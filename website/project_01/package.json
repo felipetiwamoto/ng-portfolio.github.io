@@ -1,0 +1,15 @@
+{
+	"name": "felipetiwamoto-website-project_01",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"scss": "node-sass -w asset/scss/ -o asset/css/"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^6.0.0"
+	}
+}

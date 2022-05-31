@@ -1,0 +1,430 @@
+.hire {
+	padding-bottom: 163px;
+
+	&__container {
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	&__title {
+		letter-spacing: -0.2px;
+	}
+	&__see_more {
+		font-size: 0.92rem;
+		transform: scale(1, 0.85) translate(0px, -4px);
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $green1;
+	}
+	&__form {
+	}
+	&__row {
+		@include row(0px);
+		flex-wrap: nowrap;
+	}
+	&__column {
+		@include column(50%, 0px);
+
+		&:nth-child(1) {
+			max-width: 727px;
+			flex-basis: 727px;
+			margin-right: 35px;
+		}
+
+		&:nth-child(2) {
+			min-width: 300px;
+			// max-width: 30%;
+			// flex-basis: 30%;
+		}
+	}
+	&__image {
+		width: 100%;
+		// height: 350px;
+		padding-top: 60.5%;
+		border-radius: 15px;
+		margin-bottom: 53px;
+		background-color: $greye;
+	}
+	&__subtitle {
+		font-size: 1.1rem;
+		letter-spacing: -0.2px;
+		margin-bottom: 1.15rem;
+	}
+	&__desc {
+		letter-spacing: -0.5px;
+		line-height: 27px;
+		font-weight: 500;
+		font-size: 0.9rem;
+	}
+	&__button {
+		margin-top: 23px;
+		min-height: 53px;
+		width: 140px;
+		font-size: 0.8rem;
+		font-weight: bold;
+		transform: scale(1, 0.9);
+	}
+	&__list {
+		margin-top: 10px;
+	}
+	&__list__radio {
+		display: none;
+
+		&:checked + .hire__list__item {
+			&:before {
+				transition: 0.5s;
+				opacity: 1;
+				visibility: visible;
+				background-color: $greyf9;
+			}
+
+			.hire__list__icon {
+				transition: 0.5s;
+				background-color: $yellow;
+			}
+		}
+	}
+	&__list__item {
+		margin-bottom: 20.3px;
+		position: relative;
+
+		&:before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			padding: 10px 0px;
+			border-radius: 10px;
+			margin-bottom: 15px;
+			top: -10px;
+			transition: 0.5s;
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+		}
+
+		&:hover {
+			&:before {
+				transition: 0.5s;
+				opacity: 1;
+				visibility: visible;
+				background-color: adjust-color($color: $greyf9, $alpha: -0.2);
+			}
+		}
+	}
+	&__list__label {
+		padding: 0px 33px;
+		z-index: 1;
+		position: relative;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+	}
+	&__list__icon {
+		width: 54px;
+		height: 54px;
+		transition: 0.5s;
+		border-radius: 50%;
+		box-shadow: 0px 16px 48px adjust-color($color: $grey0, $alpha: -0.92);
+		background-color: $white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			object-fit: contain;
+		}
+	}
+	&__list__title {
+		margin-left: 34px;
+		font-size: 0.9rem;
+		letter-spacing: -0.3px;
+		font-weight: bold;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.hire {
+		&__container {
+		}
+		&__top {
+		}
+		&__title {
+		}
+		&__see_more {
+		}
+		&__form {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__image {
+		}
+		&__subtitle {
+		}
+		&__desc {
+		}
+		&__button {
+		}
+		&__list {
+		}
+		&__list__radio {
+		}
+		&__list__item {
+		}
+		&__list__label {
+		}
+		&__list__icon {
+		}
+		&__list__title {
+		}
+	}
+}
+
+@media all and (max-width: 992px) {
+	.hire {
+		&__container {
+		}
+		&__top {
+		}
+		&__title {
+		}
+		&__see_more {
+		}
+		&__form {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__image {
+		}
+		&__subtitle {
+		}
+		&__desc {
+		}
+		&__button {
+		}
+		&__list {
+		}
+		&__list__radio {
+		}
+		&__list__item {
+		}
+		&__list__label {
+		}
+		&__list__icon {
+		}
+		&__list__title {
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	.hire {
+		&__container {
+		}
+		&__top {
+		}
+		&__title {
+		}
+		&__see_more {
+		}
+		&__form {
+		}
+		&__row {
+			@include row(0px);
+		}
+		&__column {
+			@include column(100%, 0px);
+
+			&:nth-child(1) {
+				display: flex;
+				align-items: center;
+			}
+		}
+		&__image {
+			margin-bottom: 0px;
+			align-self: flex-start;
+		}
+		&__info {
+			margin-left: 30px;
+		}
+		&__subtitle {
+		}
+		&__desc {
+		}
+		&__button {
+		}
+		&__list {
+			margin-top: 30px;
+			display: inline-flex;
+			flex-wrap: wrap;
+		}
+		&__list__radio {
+		}
+		&__list__item {
+			width: 50%;
+		}
+		&__list__label {
+		}
+		&__list__icon {
+		}
+		&__list__title {
+			width: calc(100% - 90px);
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.hire {
+		&__container {
+		}
+		&__top {
+			margin-bottom: 30px;
+			flex-direction: column;
+		}
+		&__title {
+		}
+		&__see_more {
+		}
+		&__form {
+		}
+		&__row {
+		}
+		&__column {
+			&:nth-child(1) {
+				margin: 0px;
+			}
+		}
+		&__image {
+			z-index: 0;
+			top: -30px;
+			padding-top: 0px;
+			height: 260px;
+			position: absolute;
+		}
+		&__info {
+			z-index: 1;
+			position: relative;
+		}
+		&__subtitle {
+		}
+		&__desc {
+		}
+		&__button {
+		}
+		&__list {
+			margin-top: 50px;
+		}
+		&__list__radio {
+		}
+		&__list__item {
+		}
+		&__list__label {
+		}
+		&__list__icon {
+		}
+		&__list__title {
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.hire {
+		&__container {
+		}
+		&__top {
+			margin-bottom: 30px;
+			flex-direction: column;
+		}
+		&__title {
+		}
+		&__see_more {
+		}
+		&__form {
+		}
+		&__row {
+		}
+		&__column {
+			@include column(100%, 0px);
+
+			&:nth-child(2) {
+				@include column(100%, 0px);
+			}
+		}
+		&__image {
+		}
+		&__info {
+			margin:0px;
+			padding:0px 15px;
+		}
+		&__subtitle {
+		}
+		&__desc {
+		}
+		&__button {
+		}
+		&__list {
+			width: 100%;
+			flex-direction: column;
+		}
+		&__list__radio {
+		}
+		&__list__item {
+			width: 100%;
+		}
+		&__list__label {
+			max-width: 300px;
+			margin: 0px auto;
+		}
+		&__list__icon {
+		}
+		&__list__title {
+		}
+	}
+}
+
+@media all and (max-width: 400px) {
+	.hire {
+		&__container {
+		}
+		&__top {
+		}
+		&__title {
+		}
+		&__see_more {
+		}
+		&__form {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__image {
+			height:340px;
+		}
+		&__info {
+		}
+		&__subtitle {
+		}
+		&__desc {
+		}
+		&__button {
+		}
+		&__list {
+		}
+		&__list__radio {
+		}
+		&__list__item {
+		}
+		&__list__label {
+		}
+		&__list__icon {
+		}
+		&__list__title {
+		}
+	}
+}

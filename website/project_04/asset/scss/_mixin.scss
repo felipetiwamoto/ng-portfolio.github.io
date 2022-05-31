@@ -1,0 +1,86 @@
+@mixin row($gap: -15px) {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: $gap;
+	margin-right: $gap;
+}
+
+@mixin column($gap: 15px, $size: 100%) {
+	box-sizing: border-box;
+	max-width: $size;
+	flex-basis: $size;
+	padding-left: $gap;
+	padding-right: $gap;
+}
+
+@mixin flex($align: stretch, $justify: flex-start, $direction: row) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+	flex-direction: $direction;
+}
+
+@mixin inlineFlex($align: stretch, $justify: flex-start, $direction: row) {
+	display: inline-flex;
+	align-items: $align;
+	justify-content: $justify;
+	flex-direction: $direction;
+}
+
+@mixin raleway($size: 14px, $weight: initial, $letter: initial, $height: initial) {
+	font-size: $size;
+	font-weight: $weight;
+	letter-spacing: $letter;
+	line-height: $height;
+	font-family: "Raleway", sans-serif;
+}
+
+@mixin roboto($size: 14px, $weight: initial, $letter: initial, $height: initial) {
+	font-size: $size;
+	font-weight: $weight;
+	letter-spacing: $letter;
+	line-height: $height;
+	font-family: "Roboto", sans-serif;
+}
+
+@mixin xs {
+	@media all and (max-width: 576px) {
+		@content;
+	}
+}
+
+@mixin sm {
+	@media all and (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media all and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media all and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin xl {
+	@media all and (min-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin xxl {
+	@media all and (min-width: 1400px) {
+		@content;
+	}
+}
+
+@mixin media($size) {
+	@media all and (min-width: $size) {
+		@content;
+	}
+}

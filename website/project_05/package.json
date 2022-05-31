@@ -1,0 +1,19 @@
+{
+	"name": "felipetiwamoto-website-project_05",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"scss": "node-sass -w asset/scss/ -o asset/css/"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"node-sass": "^6.0.1",
+		"@fortawesome/fontawesome-free": "^5.14.0",
+		"jquery": "^3.5.1",
+		"material-icons": "^0.3.1"
+	}
+}

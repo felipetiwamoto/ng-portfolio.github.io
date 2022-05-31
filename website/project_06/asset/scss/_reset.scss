@@ -1,0 +1,70 @@
+@import "theme.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: "Roboto", sans-serif;
+}
+
+.none{
+    display:none !important;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: $grey4;
+    font-family: "Roboto", sans-serif;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2.8em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+@media all and (max-width: 992px) {
+    h2 {
+        font-size: 1.9em;
+        margin-bottom: 0.9em;
+    }
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 0.8em;
+    }
+    section {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

@@ -1,0 +1,154 @@
+.service {
+	padding-bottom: 50px;
+
+	&__container {
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	&__title {
+		letter-spacing: -0.3px;
+		word-spacing: 0px;
+	}
+	&__see_more {
+		font-size: 0.92rem;
+		transform: scale(1, 0.85) translate(0px, -4px);
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $green1;
+	}
+	&__row {
+		@include row(-17px);
+	}
+	&__column {
+		@include column(33.333333%, 17px);
+	}
+	&__card {
+		border-radius: 20px;
+		box-shadow: 0px 4px 16px adjust-color($color: $grey0, $alpha: -0.92);
+	}
+	&__card__image {
+		width: 100%;
+		// height: 224px;
+		padding-top: 71%;
+		border-radius: 15px;
+		background-color: $greye;
+	}
+	&__card__bottom {
+		padding: 24px 27px;
+	}
+	&__card__title {
+		font-size: 0.85rem;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.service {
+		&__container {
+		}
+		&__top {
+		}
+		&__title {
+		}
+		&__see_more {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__card {
+		}
+		&__card__image {
+		}
+		&__card__bottom {
+		}
+		&__card__title {
+		}
+	}
+}
+
+@media all and (max-width: 992px) {
+	.service {
+		&__container {
+		}
+		&__top {
+		}
+		&__title {
+		}
+		&__see_more {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__card {
+		}
+		&__card__image {
+		}
+		&__card__bottom {
+		}
+		&__card__title {
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	.service {
+		&__container {
+		}
+		&__top {
+		}
+		&__title {
+		}
+		&__see_more {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__card {
+		}
+		&__card__image {
+		}
+		&__card__bottom {
+		}
+		&__card__title {
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.service {
+		&__container {
+		}
+		&__top {
+			margin-bottom: 30px;
+			flex-direction: column;
+		}
+		&__title {
+		}
+		&__see_more {
+		}
+		&__row {
+		}
+		&__column {
+			@include column(100%, 17px);
+
+			&:last-child .service__card {
+				margin-bottom: 0px;
+			}
+		}
+		&__card {
+			margin-bottom: 34px;
+		}
+		&__card__image {
+			padding-top: 50vw;
+		}
+		&__card__bottom {
+		}
+		&__card__title {
+		}
+	}
+}

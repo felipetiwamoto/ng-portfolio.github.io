@@ -1,0 +1,60 @@
+.tab {
+	@include flex(center, space-between);
+    margin-top:30px;
+    
+    @include md{
+        margin-top:0px;
+    }
+
+	&__item {
+		padding: 11px 5px;
+		@include roboto(16px, 400);
+		color: $grey6;
+		cursor: pointer;
+
+		&--active {
+			color: $blue;
+			@include roboto(16px, 700);
+		}
+	}
+	&__container {
+		margin-top: 76px;
+	}
+	&__content {
+		display: none;
+
+		&--active {
+			display: block;
+		}
+	}
+
+	&__row {
+		@include row(-8px);
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	&__column {
+		@include column(8px !important, 50%);
+
+		&:nth-child(1) {
+		}
+		&:nth-child(2) {
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+}
+
+@media all and (min-width: 576px) {
+}
+
+@media all and (min-width: 768px) {
+}
+
+@media all and (min-width: 992px) {
+}
+
+@media all and (min-width: 1200px) {
+}

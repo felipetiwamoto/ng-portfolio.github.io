@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Website - Project 03 | Made by Felipe T. Iwamoto</title>
+	<link rel="stylesheet" href="./asset/css/main.css" />
+</head>
+
+<body>
+	<!-- START: NAV -->
+	<input type="checkbox" id="nav__controller">
+	<label for="nav__controller" class="nav__controller">
+		<span></span>
+		<span></span>
+		<span></span>
+	</label>
+	<nav class="nav">
+		<div class="nav__container container">
+			<div class="nav__left">
+				<div class="nav__logo">
+					<img src="./asset/image/logo.svg" alt="Logo" />
+				</div>
+			</div>
+			<div class="nav__right">
+				<ul class="nav__menu">
+					<li class="nav__menu__item">
+						<a href="#" class="nav__menu__link">BROWSE</a>
+					</li>
+					<li class="nav__menu__item">
+						<a href="#" class="nav__menu__link">BLOG</a>
+					</li>
+					<li class="nav__menu__item">
+						<a href="#" class="nav__menu__link">WRITE REVIEW</a>
+					</li>
+				</ul>
+				<ul class="nav__action">
+					<li class="nav__action__item">
+						<a href="#" class="nav__action__link">LOGIN</a>
+					</li>
+					<li class="nav__action__item">
+						<a href="#" class="nav__action__link yellow">SIGNUP</a>
+					</li>
+					<li class="nav__action__item">
+						<a href="#" class="nav__action__link button white">
+							<span class="nav__action__text">REGISTER PRO</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END: NAV -->
+
+	<!-- START: HEADER -->
+	<section class="header">
+		<div class="header__container container">
+			<div class="header__row">
+				<div class="header__column">
+					<h1 class="header__title">
+						Get your next home <br />
+						projects <span class="yellow">done.</span>
+					</h1>
+					<p class="header__desc">
+						Fill a short form and get free quotes from <br />
+						handymen near you.
+					</p>
+					<form class="header__form">
+						<div class="header__radio">
+							<div class="header__radio__item">
+								<input type="radio" class="header__radio__field" name="search_type" id="search_type_01" value="hire_a_pro" checked />
+								<label for="search_type_01" class="header__radio__label">Hire a pro</label>
+							</div>
+							<div class="header__radio__item">
+								<input type="radio" class="header__radio__field" name="search_type" id="search_type_02" value="find_costumers" />
+								<label for="search_type_02" class="header__radio__label">Find costumers</label>
+							</div>
+						</div>
+						<div class="header__search_bar">
+							<div class="header__field_group">
+								<select name="category" id="category" class="header__field">
+									<option data-display="Categories"></option>
+									<option value="1">Roofing</option>
+									<option value="2">Windows</option>
+									<option value="3">Plumbing</option>
+									<option value="4">Heating</option>
+									<option value="5">Electricians</option>
+								</select>
+								<label class="header__label" for="category" class="header__label">What’s on your to-do list?</label>
+							</div>
+							<div class="header__field_group">
+								<select name="location" id="location" class="header__field">
+									<option data-display="ZIP code"></option>
+									<option value="1">Location 01</option>
+									<option value="2">Location 02</option>
+									<option value="3">Location 03</option>
+									<option value="4">Location 04</option>
+									<option value="5">Location 05</option>
+								</select>
+								<label class="header__label" for="location" class="header__label">Locations</label>
+							</div>
+							<button class="header__button button yellow">
+								<img src="./asset/image/icon_search.svg" alt="Search icon" />
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="header__column">
+				</div>
+			</div>
+		</div>
+		<div class="header__behide">
+			<div class="header__image">
+				<img src="./asset/image/header_person.svg" alt="Person" />
+			</div>
+		</div>
+	</section>
+	<!-- END: HEADER -->
+
+	<!-- START: ABOUT US -->
+	<section class="about_us">
+		<div class="about_us__container container">
+			<div class="about_us__top">
+				<h2 class="about_us__title">Here is what you can do on houmez</h2>
+			</div>
+			<div class="about_us__row">
+				<div class="about_us__column">
+					<div class="about_us__card">
+						<div class="about_us__card__icon">
+							<img src="./asset/image/icon_discover_design_ideas.svg" alt="Discover design ideas icon" />
+						</div>
+						<h3 class="about_us__card__title">
+							Discover Design<br />
+							Ideas
+						</h3>
+					</div>
+				</div>
+				<div class="about_us__column">
+					<div class="about_us__card">
+						<div class="about_us__card__icon">
+							<img src="./asset/image/icon_free_insurance _coverage.svg" alt="Free insurance coverage icon" />
+						</div>
+						<h3 class="about_us__card__title">
+							Free Insurance<br />
+							Coverage
+						</h3>
+					</div>
+				</div>
+				<div class="about_us__column">
+					<div class="about_us__card">
+						<div class="about_us__card__icon">
+							<img src="./asset/image/icon_next_day_service_available.svg" alt="Next day service available icon" />
+						</div>
+						<h3 class="about_us__card__title">
+							Same day/next day <br />
+							service available
+						</h3>
+					</div>
+				</div>
+				<div class="about_us__column">
+					<div class="about_us__card">
+						<div class="about_us__card__icon">
+							<img src="./asset/image/icon_suggest_pros.svg" alt="Suggest pros icon" />
+						</div>
+						<h3 class="about_us__card__title">Suggest Pros</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END: ABOUT US -->
+
+	<!-- START: SERVICE -->
+	<section class="service">
+		<div class="service__container container">
+			<div class="service__top">
+				<h2 class="service__title">Popular services in your area</h2>
+				<span class="service__see_more">See All Services</span>
+			</div>
+			<div class="service__row">
+				<div class="service__column">
+					<div class="service__card">
+						<div class="service__card__image"></div>
+						<div class="service__card__bottom">
+							<h3 class="service__card__title">Bathroom Remodeling</h3>
+						</div>
+					</div>
+				</div>
+				<div class="service__column">
+					<div class="service__card">
+						<div class="service__card__image"></div>
+						<div class="service__card__bottom">
+							<h3 class="service__card__title">House Cleaning</h3>
+						</div>
+					</div>
+				</div>
+				<div class="service__column">
+					<div class="service__card">
+						<div class="service__card__image"></div>
+						<div class="service__card__bottom">
+							<h3 class="service__card__title">Genereal Contracting</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END: SERVICE -->
+
+	<!-- START: HIRE -->
+	<section class="hire">
+		<div class="hire__container container">
+			<div class="hire__top">
+				<h2 class="hire__title">Contact a Local Professional</h2>
+				<span class="hire__see_more">See All Professionals</span>
+			</div>
+			<div class="hire__form">
+				<div class="hire__row">
+					<div class="hire__column">
+						<div class="hire__image"></div>
+						<div class="hire__info">
+							<h3 class="hire__subtitle">Why you should hire</h3>
+							<p class="hire__desc">
+								Not all plumbing companies can guarantee up-front pricing, superior <br />
+								workmanship and parts, licensed and insured plumbing contractors, and <br />
+								courteous support from uniformed professionals
+							</p>
+							<button class="hire__button button yellow">HIRE NOW</button>
+						</div>
+					</div>
+					<div class="hire__column">
+						<ul class="hire__list">
+							<input type="radio" class="hire__list__radio" name="professional" id="professional_01" />
+							<li class="hire__list__item">
+								<label class="hire__list__label" for="professional_01">
+									<div class="hire__list__icon">
+										<img src="./asset/image/icon_home_cleaning.svg" alt="Home cleaning icon" />
+									</div>
+									<span class="hire__list__title">Home Cleaning</span>
+								</label>
+							</li>
+							<input type="radio" class="hire__list__radio" name="professional" id="professional_02" />
+							<li class="hire__list__item">
+								<label class="hire__list__label" for="professional_02">
+									<div class="hire__list__icon">
+										<img src="./asset/image/icon_full_house_removals.svg" alt="Full House Removalsning icon" />
+									</div>
+									<span class="hire__list__title">Full House Removals</span>
+								</label>
+							</li>
+							<input type="radio" class="hire__list__radio" name="professional" id="professional_03" />
+							<li class="hire__list__item">
+								<label class="hire__list__label" for="professional_03">
+									<div class="hire__list__icon">
+										<img src="./asset/image/items_removal_icon.svg" alt="Items Removals icon" />
+									</div>
+									<span class="hire__list__title">Items Removals</span>
+								</label>
+							</li>
+							<input type="radio" class="hire__list__radio" name="professional" id="professional_04" />
+							<li class="hire__list__item">
+								<label class="hire__list__label" for="professional_04">
+									<div class="hire__list__icon">
+										<img src="./asset/image/icon_furniture_assembly.svg" alt="Furniture Assembly icon" />
+									</div>
+									<span class="hire__list__title">Furniture Assembly</span>
+								</label>
+							</li>
+							<input type="radio" class="hire__list__radio" name="professional" id="professional_05" />
+							<li class="hire__list__item">
+								<label class="hire__list__label" for="professional_05">
+									<div class="hire__list__icon">
+										<img src="./asset/image/icon_handyman.svg" alt="Handyman icon" />
+									</div>
+									<span class="hire__list__title">Handyman</span>
+								</label>
+							</li>
+							<input type="radio" class="hire__list__radio" name="professional" id="professional_06" />
+							<li class="hire__list__item">
+								<label class="hire__list__label" for="professional_06">
+									<div class="hire__list__icon">
+										<img src="./asset/image/icon_home_gardening.svg" alt="Home Gardening icon" />
+									</div>
+									<span class="hire__list__title">Home Gardening</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END: HIRE -->
+
+	<!-- START: HANDYMAN -->
+	<section class="handyman">
+		<div class="handyman__container container">
+			<div class="handyman__top">
+				<h2 class="handyman__title">Best ratedz Handymen</h2>
+				<span class="handyman__see_more">See All Services</span>
+			</div>
+			<div class="handyman__slider">
+				<div class="handyman__slider__item">
+					<div class="handyman__card">
+						<div class="handyman__card__top">
+							<div class="handyman__card__left">
+								<div class="handyman__card__image"></div>
+								<h3 class="handyman__card__name">Kang Park Ir</h3>
+								<span class="handyman__card__category">Handyman</span>
+							</div>
+							<div class="handyman__card__right">
+								<span class="handyman__card__rate">
+									<img src="./asset/image/icon_star.svg" alt="Star icon" />
+									4.9
+								</span>
+								<span class="handyman__card__count">200 Reviews</span>
+								<span class="handyman__card__verified">
+									<img src="./asset/image/icon_verified.svg" alt="Verified icon" />
+									Verified
+								</span>
+							</div>
+						</div>
+						<div class="handyman__card__body">
+							<span class="handyman__card__last_review">LATEST REVIEW</span>
+							<p class="handyman__card__review">
+								"He was an absolute lifesaver. Quick, friendly and super efficient! "
+							</p>
+							<span class="handyman__card__reviewer">Willie Ben</span>
+						</div>
+						<div class="handyman__card__bottom">
+							<button class="handyman__card__button button">REQUEST QUOTE</button>
+						</div>
+					</div>
+				</div>
+				<div class="handyman__slider__item">
+					<div class="handyman__card">
+						<div class="handyman__card__top">
+							<div class="handyman__card__left">
+								<div class="handyman__card__image"></div>
+								<h3 class="handyman__card__name">Zainathan De Adven</h3>
+								<span class="handyman__card__category">Electrician</span>
+							</div>
+							<div class="handyman__card__right">
+								<span class="handyman__card__rate">
+									<img src="./asset/image/icon_star.svg" alt="Star icon" />
+									4.6
+								</span>
+								<span class="handyman__card__count">158 Reviews</span>
+								<span class="handyman__card__verified">
+									<img src="./asset/image/icon_verified.svg" alt="Verified icon" />
+									Verified
+								</span>
+							</div>
+						</div>
+						<div class="handyman__card__body">
+							<span class="handyman__card__last_review">LATEST REVIEW</span>
+							<p class="handyman__card__review">
+								"Nice work and will use him again if any other lighting task"
+							</p>
+							<span class="handyman__card__reviewer">Steven Z</span>
+						</div>
+						<div class="handyman__card__bottom">
+							<button class="handyman__card__button button">REQUEST QUOTE</button>
+						</div>
+					</div>
+				</div>
+				<div class="handyman__slider__item">
+					<div class="handyman__card">
+						<div class="handyman__card__top">
+							<div class="handyman__card__left">
+								<div class="handyman__card__image"></div>
+								<h3 class="handyman__card__name">Tasya Jessica</h3>
+								<span class="handyman__card__category">Plumber</span>
+							</div>
+							<div class="handyman__card__right">
+								<span class="handyman__card__rate">
+									<img src="./asset/image/icon_star.svg" alt="Star icon" />
+									4.8
+								</span>
+								<span class="handyman__card__count">344 Reviews</span>
+								<span class="handyman__card__verified">
+									<img src="./asset/image/icon_verified.svg" alt="Verified icon" />
+									Verified
+								</span>
+							</div>
+						</div>
+						<div class="handyman__card__body">
+							<span class="handyman__card__last_review">LATEST REVIEW</span>
+							<p class="handyman__card__review">
+								"Quick and very informative about the task at hand. Highly recommend "
+							</p>
+							<span class="handyman__card__reviewer">Natalie Ox</span>
+						</div>
+						<div class="handyman__card__bottom">
+							<button class="handyman__card__button button">REQUEST QUOTE</button>
+						</div>
+					</div>
+				</div>
+				<div class="handyman__slider__item">
+					<div class="handyman__card">
+						<div class="handyman__card__top">
+							<div class="handyman__card__left">
+								<div class="handyman__card__image"></div>
+								<h3 class="handyman__card__name">Herman Zumafo</h3>
+								<span class="handyman__card__category">Architect</span>
+							</div>
+							<div class="handyman__card__right">
+								<span class="handyman__card__rate">
+									<img src="./asset/image/icon_star.svg" alt="Star icon" />
+									4.9
+								</span>
+								<span class="handyman__card__count">158 Reviews</span>
+								<span class="handyman__card__verified">
+									<img src="./asset/image/icon_verified.svg" alt="Verified icon" />
+									Verified
+								</span>
+							</div>
+						</div>
+						<div class="handyman__card__body">
+							<span class="handyman__card__last_review">LATEST REVIEW</span>
+							<p class="handyman__card__review">
+								"Quick and very informative about the task at hand. Highly recommend "
+							</p>
+							<span class="handyman__card__reviewer">Maria Shap</span>
+						</div>
+						<div class="handyman__card__bottom">
+							<button class="handyman__card__button button">REQUEST QUOTE</button>
+						</div>
+					</div>
+				</div>
+				<div class="handyman__slider__item">
+					<div class="handyman__card">
+						<div class="handyman__card__top">
+							<div class="handyman__card__left">
+								<div class="handyman__card__image"></div>
+								<h3 class="handyman__card__name">Kang Park Ir</h3>
+								<span class="handyman__card__category">Handyman</span>
+							</div>
+							<div class="handyman__card__right">
+								<span class="handyman__card__rate">
+									<img src="./asset/image/icon_star.svg" alt="Star icon" />
+									4.9
+								</span>
+								<span class="handyman__card__count">200 Reviews</span>
+								<span class="handyman__card__verified">
+									<img src="./asset/image/icon_verified.svg" alt="Verified icon" />
+									Verified
+								</span>
+							</div>
+						</div>
+						<div class="handyman__card__body">
+							<span class="handyman__card__last_review">LATEST REVIEW</span>
+							<p class="handyman__card__review">
+								"He was an absolute lifesaver. Quick, friendly and super efficient! "
+							</p>
+							<span class="handyman__card__reviewer">Willie Ben</span>
+						</div>
+						<div class="handyman__card__bottom">
+							<button class="handyman__card__button button">REQUEST QUOTE</button>
+						</div>
+					</div>
+				</div>
+				<div class="handyman__slider__item">
+					<div class="handyman__card">
+						<div class="handyman__card__top">
+							<div class="handyman__card__left">
+								<div class="handyman__card__image"></div>
+								<h3 class="handyman__card__name">Zainathan De Adven</h3>
+								<span class="handyman__card__category">Electrician</span>
+							</div>
+							<div class="handyman__card__right">
+								<span class="handyman__card__rate">
+									<img src="./asset/image/icon_star.svg" alt="Star icon" />
+									4.6
+								</span>
+								<span class="handyman__card__count">158 Reviews</span>
+								<span class="handyman__card__verified">
+									<img src="./asset/image/icon_verified.svg" alt="Verified icon" />
+									Verified
+								</span>
+							</div>
+						</div>
+						<div class="handyman__card__body">
+							<span class="handyman__card__last_review">LATEST REVIEW</span>
+							<p class="handyman__card__review">
+								"Nice work and will use him again if any other lighting task"
+							</p>
+							<span class="handyman__card__reviewer">Steven Z</span>
+						</div>
+						<div class="handyman__card__bottom">
+							<button class="handyman__card__button button">REQUEST QUOTE</button>
+						</div>
+					</div>
+				</div>
+				<div class="handyman__slider__item">
+					<div class="handyman__card">
+						<div class="handyman__card__top">
+							<div class="handyman__card__left">
+								<div class="handyman__card__image"></div>
+								<h3 class="handyman__card__name">Tasya Jessica</h3>
+								<span class="handyman__card__category">Plumber</span>
+							</div>
+							<div class="handyman__card__right">
+								<span class="handyman__card__rate">
+									<img src="./asset/image/icon_star.svg" alt="Star icon" />
+									4.8
+								</span>
+								<span class="handyman__card__count">344 Reviews</span>
+								<span class="handyman__card__verified">
+									<img src="./asset/image/icon_verified.svg" alt="Verified icon" />
+									Verified
+								</span>
+							</div>
+						</div>
+						<div class="handyman__card__body">
+							<span class="handyman__card__last_review">LATEST REVIEW</span>
+							<p class="handyman__card__review">
+								"Quick and very informative about the task at hand. Highly recommend "
+							</p>
+							<span class="handyman__card__reviewer">Natalie Ox</span>
+						</div>
+						<div class="handyman__card__bottom">
+							<button class="handyman__card__button button">REQUEST QUOTE</button>
+						</div>
+					</div>
+				</div>
+				<div class="handyman__slider__item">
+					<div class="handyman__card">
+						<div class="handyman__card__top">
+							<div class="handyman__card__left">
+								<div class="handyman__card__image"></div>
+								<h3 class="handyman__card__name">Herman Zumafo</h3>
+								<span class="handyman__card__category">Architect</span>
+							</div>
+							<div class="handyman__card__right">
+								<span class="handyman__card__rate">
+									<img src="./asset/image/icon_star.svg" alt="Star icon" />
+									4.9
+								</span>
+								<span class="handyman__card__count">158 Reviews</span>
+								<span class="handyman__card__verified">
+									<img src="./asset/image/icon_verified.svg" alt="Verified icon" />
+									Verified
+								</span>
+							</div>
+						</div>
+						<div class="handyman__card__body">
+							<span class="handyman__card__last_review">LATEST REVIEW</span>
+							<p class="handyman__card__review">
+								"Quick and very informative about the task at hand. Highly recommend "
+							</p>
+							<span class="handyman__card__reviewer">Maria Shap</span>
+						</div>
+						<div class="handyman__card__bottom">
+							<button class="handyman__card__button button">REQUEST QUOTE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="handyman__button button green1">
+				BROWSE PROS
+				<img src="./asset/image/icon_arrow_right.svg" alt="Arrow right icon" />
+			</a>
+		</div>
+	</section>
+	<!-- END: HANDYMAN -->
+
+	<!-- START: TESTIMONY -->
+	<section class="testimony">
+		<div class="testimony__container container">
+			<div class="testimony__row">
+				<div class="testimony__column">
+					<h2 class="testimony__title">How does houmez work?</h2>
+					<p class="testimony__desc">
+						Check out the video below to see exactly how houmez can help you get those to-dos done once
+						and for all.
+					</p>
+					<div class="testimony__video">
+						<div class="testimony__icon">
+							<img src="./asset/image/icon_player.svg" alt="Player icon" />
+						</div>
+					</div>
+				</div>
+				<div class="testimony__column">
+					<h2 class="testimony__title">What do they say about us?</h2>
+					<p class="testimony__desc">
+						Check out the video below to see exactly how our customers feel the experience with us.
+					</p>
+					<div class="testimony__video">
+						<div class="testimony__icon">
+							<img src="./asset/image/icon_player.svg" alt="Player icon" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END: TESTIMONY -->
+
+	<!-- START: CHART -->
+	<section class="chart">
+		<div class="chart__container container">
+			<div class="chart__row">
+				<div class="chart__column">
+					<div class="chart__card">
+						<span class="chart__card__number">5000</span>
+						<p class="chart__card__desc">Tasks successfully complete</p>
+					</div>
+				</div>
+				<div class="chart__column">
+					<div class="chart__card">
+						<span class="chart__card__number">3</span>
+						<p class="chart__card__desc">Avg. quotes per task</p>
+					</div>
+				</div>
+				<div class="chart__column">
+					<div class="chart__card">
+						<span class="chart__card__number">6 hrs</span>
+						<p class="chart__card__desc">Avg. time to receive offer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END: CHART -->
+
+	<!-- START: BE A PRO -->
+	<section class="be_a_pro">
+		<div class="be_a_pro__container container">
+			<div class="be_a_pro__content">
+				<div class="be_a_pro__row">
+					<div class="be_a_pro__column">
+						<h2 class="be_a_pro__title">
+							Looking to earn some extra <br />
+							money or choose when and <br />
+							how you work?
+						</h2>
+						<button class="be_a_pro__button button yellow">
+							BE A PRO
+							<img src="./asset/image/icon_arrow_right.svg" class="svg" alt="Arrow right icon" />
+						</button>
+					</div>
+				</div>
+				<div class="be_a_pro__image_behide">
+					<div class="be_a_pro__image">
+						<img src="./asset/image/header_person.svg" alt="Person" />
+					</div>
+				</div>
+				<div class="be_a_pro__ball_behide"></div>
+			</div>
+		</div>
+	</section>
+	<!-- END: BE A PRO -->
+
+	<!-- START: FOOTER -->
+	<section class="footer">
+		<div class="footer__container container">
+			<div class="footer__logo">
+				<img src="./asset/image/logo.svg" class="svg" alt="Logo" />
+			</div>
+			<div class="footer__row">
+				<div class="footer__column">
+					<h3 class="footer__title">Discover</h3>
+					<ul class="footer__menu">
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">How it works</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Houmez for business</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Earn money</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">New users FAQ</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h3 class="footer__title">Company</h3>
+					<ul class="footer__menu">
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">About us</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Careers</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Terms & conditions</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Blog</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Contact us</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Privacy policy</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Investors</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h3 class="footer__title">Existing Members</h3>
+					<ul class="footer__menu">
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Post a task</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Browse tasks</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Login</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Support centre</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Merchandise</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h3 class="footer__title">Popular Categories</h3>
+					<ul class="footer__menu">
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Handyman Services</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Cleaning Services</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Delivery Services</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Removalists</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Gardening Services</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Automotive</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">Assembly Services</a>
+						</li>
+						<li class="footer__menu__item">
+							<a href="#" class="footer__menu__link">All Services</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END: FOOTER -->
+
+	<!-- START: COPYRIGHT -->
+	<div class="copyright">
+		<div class="copyright__container container">
+			<div class="copyright__row">
+				<div class="copyright__column">
+					<span class="copyright__desc">Houmez Pty. Ltd 2011-2021©, All rights reserved.</span>
+				</div>
+				<div class="copyright__column">
+					<ul class="copyright__social">
+						<li class="copyright__social__item">
+							<a href="#" class="copyright__social__link">
+								<img src="./asset/image/youtube-icon.svg" alt="Youtube icon" />
+							</a>
+						</li>
+						<li class="copyright__social__item">
+							<a href="#" class="copyright__social__link">
+								<img src="./asset/image/twitter-icon.svg" alt="Twitter icon" />
+							</a>
+						</li>
+						<li class="copyright__social__item">
+							<a href="#" class="copyright__social__link">
+								<img src="./asset/image/instagram-icon.svg" alt="Instagram icon" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END: COPYRIGHT -->
+
+	<script src="./asset/plugin/jquery/main.js"></script>
+	<script src="./asset/plugin/nice-select/main.js"></script>
+	<script src="./asset/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+@keyframes slider {
+	from {
+		transform: translate(calc(-100% + 330px), 0px);
+	}
+	to {
+		transform: translate(calc(20% - 330px), 0px);
+	}
+}
+
+@include md {
+	@keyframes slider {
+		from {
+			transform: translate(calc(-100% + 330px), 0px);
+		}
+		to {
+			transform: translate(calc(50% - 330px), 0px);
+		}
+	}
+}
+
+.project {
+	margin-top: 40px;
+	@include row(-17.5px);
+	flex-wrap: nowrap;
+	width: 3280px;
+	overflow-x: hidden;
+	animation: slider 30s infinite alternate-reverse linear;
+
+	&:hover {
+		animation-play-state: paused;
+	}
+
+	&__item {
+		padding-left: 17.5px;
+		padding-right: 17.5px;
+		width: 330px;
+		min-width: 330px;
+
+		span {
+			display: block;
+		}
+	}
+	&__item__image {
+		width: 100%;
+		height: 296px;
+		margin-bottom: 24px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__item__category {
+		margin-bottom: 15px;
+		@include roboto(16px, 400);
+		color: $grey3;
+	}
+	&__item__title {
+		margin-bottom: 19px;
+		@include raleway(24px, bold, initial, 30px);
+		color: $grey6;
+	}
+	&__item__desc {
+		@include roboto(16px, 400, initial, 24px);
+		color: $grey6;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.project {
+		&__item {
+		}
+		&__item__image {
+		}
+		&__item__category {
+		}
+		&__item__title {
+		}
+		&__item__desc {
+		}
+	}
+}
+
+@media all and (min-width: 576px) {
+	.project {
+		&__item {
+		}
+		&__item__image {
+		}
+		&__item__category {
+		}
+		&__item__title {
+		}
+		&__item__desc {
+		}
+	}
+}
+
+@media all and (min-width: 768px) {
+	.project {
+		&__item {
+		}
+		&__item__image {
+		}
+		&__item__category {
+		}
+		&__item__title {
+		}
+		&__item__desc {
+		}
+	}
+}
+
+@media all and (min-width: 992px) {
+	.project {
+		&__item {
+		}
+		&__item__image {
+		}
+		&__item__category {
+		}
+		&__item__title {
+		}
+		&__item__desc {
+		}
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.project {
+		&__item {
+		}
+		&__item__image {
+		}
+		&__item__category {
+		}
+		&__item__title {
+		}
+		&__item__desc {
+		}
+	}
+}

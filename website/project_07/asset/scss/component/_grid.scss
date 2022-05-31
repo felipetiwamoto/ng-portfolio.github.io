@@ -1,0 +1,191 @@
+@mixin cols($type, $max, $baseWidth) {
+    @for $size from 1 through $max {
+        .col-#{$type}-#{$size} {
+            max-width: $baseWidth * $size;
+        }
+    }
+}
+
+@mixin offsets($type, $max, $baseWidth) {
+    @for $size from 1 through $max {
+        .offset-#{$type}-#{$size} {
+            margin-left: $baseWidth * $size;
+        }
+    }
+}
+
+@mixin pushs($type, $max, $baseWidth) {
+    @for $size from 1 through $max {
+        .push-#{$type}-#{$size} {
+            margin-right: $baseWidth * $size;
+        }
+    }
+}
+
+@mixin orders($type, $max, $baseWidth) {
+    @for $size from 1 through $max {
+        .order-#{$type}-#{$size} {
+            order: $size;
+        }
+    }
+}
+
+@mixin gutters($name, $gutter) {
+    .grid.#{$name} {
+        margin-left: -#{$gutter}px;
+        margin-right: -#{$gutter}px;
+
+        > [class*="col-xs-"],
+        > [class*="col-sm-"],
+        > [class*="col-md-"],
+        > [class*="col-lg-"],
+        > [class*="col-xl-"] {
+            padding-left: #{$gutter}px;
+            padding-right: #{$gutter}px;
+        }
+    }
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    > [class*="col-xs-"],
+    > [class*="col-sm-"],
+    > [class*="col-md-"],
+    > [class*="col-lg-"],
+    > [class*="col-xl-"] {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    @media all and (max-width: 576px) {
+        @include cols("xs", 12, 8.3333333%);
+        @include offsets("xs", 12, 8.3333333%);
+        @include pushs("xs", 12, 8.3333333%);
+        @include orders("xs", 12, 8.3333333%);
+    }
+
+    @media all and (min-width: 576px) {
+        @include cols("xs", 12, 8.3333333%);
+        @include offsets("xs", 12, 8.3333333%);
+        @include pushs("xs", 12, 8.3333333%);
+        @include orders("xs", 12, 8.3333333%);
+    }
+
+    @media all and (min-width: 768px) {
+        @include cols("sm", 12, 8.3333333%);
+        @include offsets("sm", 12, 8.3333333%);
+        @include pushs("sm", 12, 8.3333333%);
+        @include orders("sm", 12, 8.3333333%);
+    }
+
+    @media all and (min-width: 992px) {
+        @include cols("md", 12, 8.3333333%);
+        @include offsets("md", 12, 8.3333333%);
+        @include pushs("md", 12, 8.3333333%);
+        @include orders("md", 12, 8.3333333%);
+    }
+
+    @media all and (min-width: 1200px) {
+        @include cols("lg", 12, 8.3333333%);
+        @include offsets("lg", 12, 8.3333333%);
+        @include pushs("lg", 12, 8.3333333%);
+        @include orders("lg", 12, 8.3333333%);
+    }
+
+    @media all and (min-width: 1600px) {
+        @include cols("xl", 12, 8.3333333%);
+        @include offsets("xl", 12, 8.3333333%);
+        @include pushs("xl", 12, 8.3333333%);
+        @include orders("xl", 12, 8.3333333%);
+    }
+}
+
+.grid.sixteen {
+    @media all and (min-width: 576px) {
+        @include cols("xs", 12, 6.25%);
+        @include offsets("xs", 12, 6.25%);
+        @include pushs("xs", 12, 6.25%);
+        @include orders("xs", 12, 6.25%);
+    }
+
+    @media all and (min-width: 768px) {
+        @include cols("sm", 12, 6.25%);
+        @include offsets("sm", 12, 6.25%);
+        @include pushs("sm", 12, 6.25%);
+        @include orders("sm", 12, 6.25%);
+    }
+
+    @media all and (min-width: 992px) {
+        @include cols("md", 12, 6.25%);
+        @include offsets("md", 12, 6.25%);
+        @include pushs("md", 12, 6.25%);
+        @include orders("md", 12, 6.25%);
+    }
+
+    @media all and (min-width: 1200px) {
+        @include cols("lg", 12, 6.25%);
+        @include offsets("lg", 12, 6.25%);
+        @include pushs("lg", 12, 6.25%);
+        @include orders("lg", 12, 6.25%);
+    }
+
+    @media all and (min-width: 1600px) {
+        @include cols("xl", 12, 6.25%);
+        @include offsets("xl", 12, 6.25%);
+        @include pushs("xl", 12, 6.25%);
+        @include orders("xl", 12, 6.25%);
+    }
+}
+
+.grid.twenty {
+    @media all and (min-width: 576px) {
+        @include cols("xs", 12, 5%);
+        @include offsets("xs", 12, 5%);
+        @include pushs("xs", 12, 5%);
+        @include orders("xs", 12, 5%);
+    }
+
+    @media all and (min-width: 768px) {
+        @include cols("sm", 12, 5%);
+        @include offsets("sm", 12, 5%);
+        @include pushs("sm", 12, 5%);
+        @include orders("sm", 12, 5%);
+    }
+
+    @media all and (min-width: 992px) {
+        @include cols("md", 12, 5%);
+        @include offsets("md", 12, 5%);
+        @include pushs("md", 12, 5%);
+        @include orders("md", 12, 5%);
+    }
+
+    @media all and (min-width: 1200px) {
+        @include cols("lg", 12, 5%);
+        @include offsets("lg", 12, 5%);
+        @include pushs("lg", 12, 5%);
+        @include orders("lg", 12, 5%);
+    }
+
+    @media all and (min-width: 1600px) {
+        @include cols("xl", 12, 5%);
+        @include offsets("xl", 12, 5%);
+        @include pushs("xl", 12, 5%);
+        @include orders("xl", 12, 5%);
+    }
+}
+
+@include gutters(zero, 0);
+@include gutters(mini, 2.5);
+@include gutters(tiny, 5);
+@include gutters(small, 10);
+@include gutters(medium, 15);
+@include gutters(large, 25);
+@include gutters(big, 40);
+@include gutters(huge, 60);
+@include gutters(massive, 85);

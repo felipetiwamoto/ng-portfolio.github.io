@@ -1,0 +1,70 @@
+.faq {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+	max-width: 100vw;
+	overflow-x: none;
+
+	@include md {
+		padding-top: 107px;
+		padding-bottom: 100px;
+		overflow-x: hidden;
+	}
+
+	&__ornament {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		z-index: -1;
+
+		* {
+			position: absolute;
+		}
+	}
+	&__ornament__square.blue {
+		bottom: -11%;
+		left: -20%;
+	}
+	&__ornament__square.green {
+		top: -3%;
+		right: -17%;
+	}
+	&__ornament__pattern {
+		top: 31%;
+		left: -19%;
+	}
+	&__container {
+		position: relative;
+		transition: 0.5s;
+	}
+	&__row {
+		@include row(-15px);
+		justify-content: space-between;
+		align-items: flex-end;
+		flex-wrap: wrap;
+	}
+	&__column {
+		@include column(15px, 100%);
+
+		&:nth-child(1) {
+			max-width: calc(100%);
+			flex-basis: calc(100%);
+
+			@include md {
+				max-width: calc(100% - 490px);
+				flex-basis: calc(100% - 490px);
+			}
+		}
+		&:nth-child(2) {
+			max-width: 100%;
+			flex-basis: 100%;
+
+			@include md {
+				max-width: 490px;
+				flex-basis: 490px;
+			}
+		}
+	}
+}

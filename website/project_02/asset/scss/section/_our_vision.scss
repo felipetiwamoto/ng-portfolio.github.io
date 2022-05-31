@@ -1,0 +1,164 @@
+.our_vision {
+	padding-top:90px;
+	&__container {
+	}
+	&__row {
+		margin-left: -15px;
+		margin-right: -15px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__column {
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 50%;
+		flex-basis: 50%;
+
+		&:first-child {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+	&__image {
+		width: 100%;
+		// height: 422px;
+		padding-top:77%;
+		background-color: $imagePlaceholder;
+	}
+	&__info {
+		margin-right: 17px;
+		margin-top:2px;
+		text-align:right;
+	}
+	&__name {
+		font-weight: 600;
+		letter-spacing: 1.5px;
+		display: block;
+		font-family: "Poppins", sans-serif;
+		color: $textOrange;
+		transform: translateY(-5px);
+	}
+	&__title {
+		word-spacing: -2px;
+		margin-bottom: 10px;
+		word-spacing: -1px;
+	}
+	&__desc {
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.our_vision {
+		&__container {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__image {
+		}
+		&__column {
+		}
+		&__info {
+		}
+		&__name {
+		}
+		&__title {
+		}
+		&__desc {
+		}
+	}
+}
+
+@media all and (max-width: 992px) {
+	.our_vision {
+		position: relative;
+		&__container {
+		}
+		&__row {
+			margin-left:0px;
+			margin-right:0px;
+		}
+		&__column {
+			padding-left:0px;
+			padding-right:0px;
+			max-width: 100%;
+			flex-basis: 100%;
+
+			&:nth-child(2) {
+				width: 50%;
+				height:100%;
+				top: 0px;
+				left: 0px;
+				position: absolute;
+			}
+
+		}
+		&__image {
+			height:100%;
+			padding-top:0px;
+		}
+		&__column {
+		}
+		&__info {
+			z-index: 1;
+			margin-right: 0px;
+			position:relative;
+		}
+		&__name {
+		}
+		&__title {
+		}
+		&__desc {
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	.our_vision {
+		&__container {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__image {
+		}
+		&__column {
+		}
+		&__info {
+		}
+		&__name {
+		}
+		&__title {
+		}
+		&__desc {
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.our_vision {
+		&__container {
+		}
+		&__row {
+		}
+		&__column {
+		}
+		&__image {
+			display:none;
+		}
+		&__column {
+		}
+		&__info {
+			text-align:center;
+		}
+		&__name {
+		}
+		&__title {
+		}
+		&__desc {
+		}
+	}
+}
