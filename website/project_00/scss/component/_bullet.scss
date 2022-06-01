@@ -1,0 +1,49 @@
+@import './../theme.scss';
+
+.bullet {
+	margin-left: -2.5px;
+	margin-right: -2.5px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+
+	&__item {
+		margin-left: 2.5px;
+		margin-right: 2.5px;
+		border-radius: 50px;
+		width: 10px;
+		height: 10px;
+
+		&--active {
+		}
+	}
+}
+
+.bullet.small {
+	.bullet__item {
+		width: 7px;
+		height: 7px;
+	}
+}
+
+.bullet.white {
+	.bullet__item {
+		background-color: $white;
+
+		&--active ~ .bullet__item,
+		&--active {
+			background-color: $grey4;
+		}
+	}
+}
+
+.bullet.greya {
+	.bullet__item {
+		background-color: $greya;
+
+		&--active ~ .bullet__item,
+		&--active {
+			background-color: $grey4;
+		}
+	}
+}

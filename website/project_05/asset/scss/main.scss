@@ -1,35 +1,34 @@
-@import "theme.scss";
+@import 'theme.scss';
 
 /* START: LIBRARIES */
-$material-icons-font-path: "./../../node_modules/material-icons/iconfont/";
-@import "./../../node_modules/material-icons/iconfont/material-icons.scss";
-@import "./../../node_modules/material-icons/css/material-icons.scss";
-@import "./../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+$material-icons-font-path: './../../node_modules/material-icons/iconfont/';
+@import './../../node_modules/material-icons/iconfont/material-icons.scss';
+@import './../../node_modules/material-icons/css/material-icons.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 /* END: LIBRARIES */
 
-@import "reset.scss";
-@import "component/container.scss";
-@import "component/grid.scss";
-@import "component/button.scss";
-@import "component/form.scss";
-@import "component/chat.scss";
-@import "component/loader.scss";
+@import 'reset.scss';
+@import 'component/container.scss';
+@import 'component/grid.scss';
+@import 'component/button.scss';
+@import 'component/form.scss';
+@import 'component/chat.scss';
+@import 'component/loader.scss';
 
-@import "page/login.scss";
-@import "page/register.scss";
-@import "page/forgot-password.scss";
-@import "page/posts.scss";
+@import 'page/login.scss';
+@import 'page/register.scss';
+@import 'page/forgot-password.scss';
+@import 'page/posts.scss';
 
-
-.kaushan{
-    font-family: 'Kaushan Script', cursive;
+.kaushan {
+	font-family: 'Kaushan Script', cursive;
 }
 
-body > section{
-    display:none;
+body > section {
+	display: none;
 
-    &.active{
-        display:block;
-    }
+	&.active {
+		display: block;
+	}
 }

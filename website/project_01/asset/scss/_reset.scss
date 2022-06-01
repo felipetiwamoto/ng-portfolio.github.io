@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 * {
 	margin: 0px;
@@ -6,20 +6,20 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
-	font-family: "Lato", sans-serif;
+	font-family: 'Lato', sans-serif;
 	color: $grey1;
 }
 
 input,
 select,
 textarea {
-	font-family: "Lato", sans-serif;
+	font-family: 'Lato', sans-serif;
 	color: $grey1;
 }
 
 html,
 body {
-	font-family: "Lato", sans-serif;
+	font-family: 'Lato', sans-serif;
 	color: $grey1;
 }
 

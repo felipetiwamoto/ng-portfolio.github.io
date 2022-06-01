@@ -243,8 +243,8 @@
 				color: $grey1;
 			}
 			.price__list__icon:before {
-				font-family: "Font Awesome 5 Free";
-				content: "\f00c"; /* FontAwesome Unicode */
+				font-family: 'Font Awesome 5 Free';
+				content: '\f00c'; /* FontAwesome Unicode */
 				color: #f16e88;
 			}
 		}
@@ -258,11 +258,11 @@
 		margin-top: 7px;
 	}
 	&__list__icon:before {
-		font-family: "Font Awesome 5 Free";
+		font-family: 'Font Awesome 5 Free';
 		font-weight: 900;
 		font-size: 1.2rem;
 		line-height: 1;
-		content: "\f068";
+		content: '\f068';
 		display: inline-block;
 		font-style: normal;
 		font-variant: normal;

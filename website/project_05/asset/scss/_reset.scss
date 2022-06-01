@@ -1,32 +1,32 @@
-@import "theme.scss";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import 'theme.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
 
-:root{
+:root {
 }
 
 button,
 input,
 textarea,
 select {
-    font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
-    overflow-y: auto;
-    overflow-x: hidden;
-    background-color: #{$greyd}40;
-    color: $grey4;
-    font-family: "Roboto", sans-serif;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: #{$greyd}40;
+	color: $grey4;
+	font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -47,7 +47,7 @@ h5 {
 h6 {
 }
 
-p{
-    font-size:1em;
-    line-height:1.75em;
+p {
+	font-size: 1em;
+	line-height: 1.75em;
 }

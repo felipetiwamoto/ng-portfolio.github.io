@@ -5,10 +5,10 @@
 	max-width: 100vw;
 	overflow-x: hidden;
 
-    @include md{
-        padding: 76px 0px;
-        margin-top: 114px;
-    }
+	@include md {
+		padding: 76px 0px;
+		margin-top: 114px;
+	}
 
 	.container {
 		position: relative;

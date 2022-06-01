@@ -24,7 +24,7 @@
 			margin-right: 45px;
 
 			&:after {
-				content: "";
+				content: '';
 				bottom: -124px;
 				right: -30px;
 				z-index: 1;
@@ -43,7 +43,7 @@
 		font-size: 0.9rem;
 		font-weight: 600;
 		margin-bottom: 14px;
-		font-family: "Poppins", sans-serif;
+		font-family: 'Poppins', sans-serif;
 		color: $textOrange;
 		display: block;
 	}
@@ -103,7 +103,7 @@
 	&__image {
 		width: 100%;
 		// height: 473px;
-		padding-top:104%;
+		padding-top: 104%;
 		border-radius: 10px;
 		z-index: 1;
 		position: relative;
@@ -163,25 +163,25 @@
 			padding-right: 15px;
 			max-width: 100%;
 			flex-basis: 100%;
-			display:flex;
+			display: flex;
 			justify-content: center;
 			align-items: center;
-			flex-direction:column;
+			flex-direction: column;
 
 			&:nth-child(1) {
 			}
 
 			&:nth-child(2) {
-				margin-right:0px;
-				max-width:400px;
-				flex-basis:400px;
+				margin-right: 0px;
+				max-width: 400px;
+				flex-basis: 400px;
 			}
 		}
 		&__name {
 		}
 		&__title {
-			br{
-				display:none;
+			br {
+				display: none;
 			}
 		}
 		&__question {
@@ -199,20 +199,20 @@
 		&__question__desc {
 		}
 		&__description {
-			margin-bottom:15px;
+			margin-bottom: 15px;
 			text-align: center;
 		}
 		&__image {
-			width:100%;
-			height:0px;
-			padding-top:100%;
+			width: 100%;
+			height: 0px;
+			padding-top: 100%;
 		}
 	}
 }
 
 @media all and (max-width: 768px) {
 	.faq {
-		padding-bottom:100px !important;
+		padding-bottom: 100px !important;
 
 		&__container {
 		}

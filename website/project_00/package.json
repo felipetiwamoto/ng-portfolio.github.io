@@ -1,0 +1,20 @@
+{
+	"name": "front",
+	"version": "1.0.0",
+	"description": "Um repository para meus design e fronts.",
+	"main": "index.js",
+	"scripts": {
+		"scss": "node-sass -w scss/ -o css/"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^6.0.0"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^5.14.0",
+		"jquery": "^3.5.1",
+		"material-icons": "^0.3.1"
+	}
+}

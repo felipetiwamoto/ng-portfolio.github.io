@@ -18,7 +18,7 @@
 .row {
 	@include row(-15px);
 
-	> [class*="col-"] {
+	> [class*='col-'] {
 		@include column(15px);
 	}
 
@@ -26,7 +26,7 @@
 		margin-left: -8px;
 		margin-right: -8px;
 
-		> [class*="col-"] {
+		> [class*='col-'] {
 			padding-left: 8px;
 			padding-right: 8px;
 		}
@@ -36,7 +36,7 @@
 		margin-left: -50px;
 		margin-right: -50px;
 
-		> [class*="col-"] {
+		> [class*='col-'] {
 			padding-left: 50px;
 			padding-right: 50px;
 		}

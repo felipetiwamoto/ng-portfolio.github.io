@@ -1,5 +1,5 @@
 .our_vision {
-	padding-top:90px;
+	padding-top: 90px;
 	&__container {
 	}
 	&__row {
@@ -23,19 +23,19 @@
 	&__image {
 		width: 100%;
 		// height: 422px;
-		padding-top:77%;
+		padding-top: 77%;
 		background-color: $imagePlaceholder;
 	}
 	&__info {
 		margin-right: 17px;
-		margin-top:2px;
-		text-align:right;
+		margin-top: 2px;
+		text-align: right;
 	}
 	&__name {
 		font-weight: 600;
 		letter-spacing: 1.5px;
 		display: block;
-		font-family: "Poppins", sans-serif;
+		font-family: 'Poppins', sans-serif;
 		color: $textOrange;
 		transform: translateY(-5px);
 	}
@@ -77,34 +77,33 @@
 		&__container {
 		}
 		&__row {
-			margin-left:0px;
-			margin-right:0px;
+			margin-left: 0px;
+			margin-right: 0px;
 		}
 		&__column {
-			padding-left:0px;
-			padding-right:0px;
+			padding-left: 0px;
+			padding-right: 0px;
 			max-width: 100%;
 			flex-basis: 100%;
 
 			&:nth-child(2) {
 				width: 50%;
-				height:100%;
+				height: 100%;
 				top: 0px;
 				left: 0px;
 				position: absolute;
 			}
-
 		}
 		&__image {
-			height:100%;
-			padding-top:0px;
+			height: 100%;
+			padding-top: 0px;
 		}
 		&__column {
 		}
 		&__info {
 			z-index: 1;
 			margin-right: 0px;
-			position:relative;
+			position: relative;
 		}
 		&__name {
 		}
@@ -147,12 +146,12 @@
 		&__column {
 		}
 		&__image {
-			display:none;
+			display: none;
 		}
 		&__column {
 		}
 		&__info {
-			text-align:center;
+			text-align: center;
 		}
 		&__name {
 		}

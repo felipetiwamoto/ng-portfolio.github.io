@@ -1,6 +1,6 @@
 .our_team {
-	padding-top:69px;
-	text-align:center;
+	padding-top: 69px;
+	text-align: center;
 
 	&__container {
 	}
@@ -8,30 +8,30 @@
 		letter-spacing: 2px;
 		font-size: 0.9rem;
 		font-weight: 600;
-		margin-bottom:14px;
+		margin-bottom: 14px;
 		font-family: 'Poppins', sans-serif;
-		color:$textOrange;
-		display:block;
+		color: $textOrange;
+		display: block;
 	}
 	&__title {
-		margin-bottom:35px;
+		margin-bottom: 35px;
 	}
 	&__row {
-		margin-left:-15px;
-		margin-right:-15px;
-		display:flex;
-		flex-wrap:wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	&__column {
-		padding-left:15px;
-		padding-right:15px;
-		max-width:25%;
-		flex-basis:25%;
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 25%;
+		flex-basis: 25%;
 	}
 	&__image {
-		width:100%;
-		height:0px;
-		padding-top:98%;
+		width: 100%;
+		height: 0px;
+		padding-top: 98%;
 		background-color: $imagePlaceholder;
 	}
 }
@@ -79,12 +79,12 @@
 		&__title {
 		}
 		&__row {
-			margin-left:-2.5px;
-			margin-right:-2.5px;
+			margin-left: -2.5px;
+			margin-right: -2.5px;
 		}
 		&__column {
-			padding-left:2.5px;
-			padding-right:2.5px;
+			padding-left: 2.5px;
+			padding-right: 2.5px;
 		}
 		&__image {
 		}
@@ -100,17 +100,17 @@
 		&__title {
 		}
 		&__row {
-			margin-left:-15px;
-			margin-right:-15px;
+			margin-left: -15px;
+			margin-right: -15px;
 		}
 		&__column {
-			padding-left:15px;
-			padding-right:15px;
-			max-width:50%;
-			flex-basis:50%;
+			padding-left: 15px;
+			padding-right: 15px;
+			max-width: 50%;
+			flex-basis: 50%;
 		}
 		&__image {
-			margin-bottom:30px;
+			margin-bottom: 30px;
 		}
 	}
 }

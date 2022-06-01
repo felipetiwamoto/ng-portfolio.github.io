@@ -1,0 +1,357 @@
+@import 'theme.scss';
+
+/* START: LIBRARIES */
+$material-icons-font-path: './../node_modules/material-icons/iconfont/';
+@import './../node_modules/material-icons/iconfont/material-icons.scss';
+@import './../node_modules/material-icons/css/material-icons.scss';
+@import './../node_modules/@fortawesome/fontawesome-free/css/all.css';
+/* END: LIBRARIES */
+
+@import 'reset.scss';
+@import 'component/container.scss';
+@import 'component/grid.scss';
+@import 'component/bullet.scss';
+
+body.pdf {
+	padding: 0px;
+	margin: 0px;
+	.main {
+		max-width: initial;
+		box-shadow: none;
+
+		#skill {
+			// margin-top:100px;
+		}
+	}
+}
+
+.main {
+	padding-left: 0px;
+	padding-right: 0px;
+	display: flex;
+	box-shadow: -50px 50px 100px -25px rgba(0, 0, 0, 0.25);
+	background-color: $white;
+
+	.left {
+		width: 340px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: $primary;
+		color: $grey4;
+
+		.person {
+			width: 100%;
+			margin-top: -50px;
+			padding: 50px;
+			margin-bottom: -20px;
+			padding-bottom: 60px;
+			text-align: center;
+			background-color: $white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&__image {
+				width: 150px;
+				height: 150px;
+				border-radius: 50px;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+					object-fit: cover;
+				}
+			}
+
+			&__name {
+				margin-top: 15px;
+				margin-bottom: 10px;
+				font-weight: 300;
+				strong {
+					font-weight: 900;
+				}
+			}
+			&__job {
+				font-weight: 400;
+				color: $grey7;
+			}
+		}
+		.panel {
+			&__item {
+				padding-left: 30px;
+				padding-right: 30px;
+
+				.contact {
+					&__item {
+						margin-bottom: 10px;
+						display: flex;
+						align-items: flex-start;
+					}
+					&__icon {
+						width: 30px;
+						min-width: 30px;
+						height: 30px;
+						margin-right: 5px;
+						margin-top: -3px;
+						display: flex;
+						justify-content: flex-start;
+						align-items: flex-start;
+					}
+				}
+				.social {
+					&__item {
+						margin-bottom: 20px;
+					}
+					&__item {
+						display: flex;
+						align-items: flex-start;
+						color: $grey4;
+					}
+					&__icon {
+						width: 30px;
+						min-width: 30px;
+						height: 30px;
+						border-radius: 30px;
+						margin-right: 10px;
+						margin-top: -7px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						background-color: $grey4;
+
+						i {
+							color: $white;
+						}
+					}
+				}
+
+				.lang {
+					&__item {
+						margin-bottom: 10px;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+					}
+					&__icon {
+						width: 30px;
+						min-width: 30px;
+						height: 30px;
+						margin-right: 5px;
+						display: flex;
+						justify-content: flex-start;
+						align-items: flex-start;
+					}
+				}
+
+				.hobby {
+					margin-left: -5px;
+					margin-right: -5px;
+					display: flex;
+					flex-wrap: wrap;
+
+					&__item {
+						width: 50%;
+						padding-left: 5px;
+						padding-right: 5px;
+						margin-bottom: 10px;
+						display: flex;
+						align-items: baseline;
+						justify-content: space-between;
+					}
+				}
+			}
+			&__body {
+				padding-top: 25px;
+				padding-bottom: 25px;
+			}
+			&__title {
+				padding: 10px 15px;
+				text-align: center;
+				background-color: $grey4;
+				color: $greye;
+			}
+		}
+		.skill {
+			margin-bottom: 10px;
+
+			&__title {
+				margin-bottom: 15px;
+				display: flex;
+				align-items: center;
+				color: $grey4;
+
+				& ~ .skill__title {
+					margin-top: 15px;
+				}
+			}
+
+			&__icon {
+				width: 30px;
+				min-width: 30px;
+				height: 30px;
+				margin-right: 5px;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+
+				i {
+					font-size: 24px;
+					color: $grey4;
+				}
+			}
+
+			&__name {
+				font-size: 12px;
+				font-weight: 400;
+				margin-bottom: 2px;
+			}
+		}
+	}
+
+	.right {
+		width: calc(100% - 340px);
+		padding: 50px;
+		color: $greya;
+
+		.section {
+			&__header {
+				margin-bottom: 30px;
+				display: flex;
+				align-items: flex-end;
+				color: $grey4;
+			}
+			&__icon {
+				width: 40px;
+				min-width: 40px;
+				height: 40px;
+				border-radius: 50px;
+				margin-right: 15px;
+				background-color: $primary;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			&__title {
+				flex-grow: 1;
+				padding-bottom: 7.5px;
+				border-bottom: 2px solid $grey4;
+				font-weight: bold;
+			}
+			&__body {
+				.experience,
+				.education {
+					& + .experience,
+					& + .education {
+						margin-top: 30px;
+					}
+					&__header {
+						margin-bottom: 20px;
+						display: flex;
+						justify-content: space-between;
+						align-items: flex-end;
+						color: $grey4;
+					}
+					&__company-name {
+						display: flex;
+						align-items: center;
+
+						&:before {
+							@include material-icons();
+							content: 'keyboard_arrow_right';
+							margin-right: 5px;
+							margin-left: -8px;
+							display: inline-flex;
+						}
+					}
+					&__period {
+						font-weight: 400;
+					}
+					&__body {
+						.task,
+						.soft-skill,
+						.hard-skill {
+							display: flex;
+							flex-wrap: wrap;
+							align-items: baseline;
+
+							&__title {
+								margin-bottom: 0.6em;
+								margin-top: 10px;
+								color: $grey4;
+
+								&:first-child {
+									margin-top: 0px;
+								}
+							}
+							&__item {
+								width: 50%;
+								margin-bottom: 10px;
+								position: relative;
+								display: flex;
+								align-items: flex-start;
+
+								&:before {
+									@include material-icons();
+									content: 'keyboard_arrow_right';
+									font-size: 16px;
+									margin-top: 2px;
+									display: inline-flex;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			& + section {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 992px) {
+	.main {
+		width: 100%;
+		flex-direction: column;
+		.left {
+			width: 100%;
+			.panel {
+				display: flex;
+				flex-wrap: wrap;
+
+				&__item {
+					width: 50%;
+
+					&#skill {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.right {
+			width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	body {
+		padding: 15px;
+	}
+	.main {
+		.left {
+			width: 100%;
+			.panel {
+				&__item {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

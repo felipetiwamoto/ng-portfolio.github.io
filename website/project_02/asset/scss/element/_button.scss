@@ -1,18 +1,18 @@
-.button{
-    font-size:0.8rem;
-    min-height:42px;
-    padding:5px 15px;
-    border-radius:30px;
-    border:1px solid transparent;
-    outline:none;
-    box-shadow: none;
-    display:inline-flex;
-    justify-content: center;
-    align-items: center;
-    cursor:pointer;
+.button {
+	font-size: 0.8rem;
+	min-height: 42px;
+	padding: 5px 15px;
+	border-radius: 30px;
+	border: 1px solid transparent;
+	outline: none;
+	box-shadow: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
 
-    &.orange{
-        background-color: $orange;
-        color:$textOrange
-    }
+	&.orange {
+		background-color: $orange;
+		color: $textOrange;
+	}
 }

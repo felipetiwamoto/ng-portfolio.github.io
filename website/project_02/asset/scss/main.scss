@@ -3,25 +3,25 @@
 // font-family: 'Poppins', sans-serif;
 // font-family: 'Roboto', sans-serif;
 
-@import "./theme";
-@import "./reset";
+@import './theme';
+@import './reset';
 
 // START: ELEMENT
-@import "./element/button";
+@import './element/button';
 // END: ELEMENT
 
 // START: COMPONENT
-@import "./component/container";
+@import './component/container';
 // END: COMPONENT
 
 // START: SECTION
-@import "./section/faq";
-@import "./section/footer";
-@import "./section/nav";
-@import "./section/our_mission";
-@import "./section/our_team";
-@import "./section/our_vision";
-@import "./section/page";
+@import './section/faq';
+@import './section/footer';
+@import './section/nav';
+@import './section/our_mission';
+@import './section/our_team';
+@import './section/our_vision';
+@import './section/page';
 // END: SECTION
 
 // START: PAGE

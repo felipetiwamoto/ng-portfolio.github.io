@@ -1,0 +1,53 @@
+@import 'theme.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+:root {
+}
+
+button,
+input,
+textarea,
+select {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	padding: 50px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: $greyd;
+	color: $grey4;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.75em;
+}

@@ -32,7 +32,7 @@
 	font-weight: $weight;
 	letter-spacing: $letter;
 	line-height: $height;
-	font-family: "Raleway", sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 @mixin roboto($size: 14px, $weight: initial, $letter: initial, $height: initial) {
@@ -40,7 +40,7 @@
 	font-weight: $weight;
 	letter-spacing: $letter;
 	line-height: $height;
-	font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 @mixin xs {
